@@ -1,0 +1,16 @@
+uuid: 534f47a8-7ff8-478f-8f2a-bc79bb81c4ac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:57afc36d-ab94-4d64-86f6-35010693afb0'
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: item_list
+label: 'Lista de elementos'
+icon_uuid: 57afc36d-ab94-4d64-86f6-35010693afb0
+description: 'Lista de elementos con imagen, nombre y link'
+behavior_plugins: {  }

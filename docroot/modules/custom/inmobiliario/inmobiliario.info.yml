@@ -1,0 +1,5 @@
+name: 'inmobiliario'
+type: module
+description: 'Module for inmobiliario admin'
+core: 8.x
+package: 'Inmob'

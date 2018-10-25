@@ -1,0 +1,39 @@
+uuid: 13a2707d-1dc8-4f3f-812b-6c4adfe7935a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.page
+    - paragraphs.paragraphs_type.bloque_de_texto
+    - paragraphs.paragraphs_type.item_list
+  module:
+    - entity_reference_revisions
+id: node.page.field_components
+field_name: field_components
+entity_type: node
+bundle: page
+label: Componentes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      bloque_de_texto: bloque_de_texto
+      item_list: item_list
+    target_bundles_drag_drop:
+      bloque_de_texto:
+        enabled: true
+        weight: 4
+      elemento_de_lista:
+        weight: 5
+        enabled: false
+      item_list:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

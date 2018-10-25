@@ -1,0 +1,63 @@
+uuid: 4cc088f2-9550-42bb-9929-06f2a7539e7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.elemento_de_lista.field_image
+    - field.field.paragraph.elemento_de_lista.field_link
+    - field.field.paragraph.elemento_de_lista.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.elemento_de_lista
+  module:
+    - field_group
+    - image
+    - link
+third_party_settings:
+  field_group:
+    group_elemento_de_:
+      children:
+        - field_image
+        - field_title
+        - field_link
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Elemento de lista'
+id: paragraph.elemento_de_lista.default
+targetEntityType: paragraph
+bundle: elemento_de_lista
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

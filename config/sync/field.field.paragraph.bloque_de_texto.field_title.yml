@@ -1,0 +1,19 @@
+uuid: 9afc8f93-0333-4d28-8823-c0128b9d602f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.bloque_de_texto
+id: paragraph.bloque_de_texto.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: bloque_de_texto
+label: Titulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

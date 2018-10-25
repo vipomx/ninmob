@@ -1,0 +1,31 @@
+uuid: fcfc2699-fae6-4f13-a4a4-38c55aa515aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloque_de_texto.field_content
+    - field.field.paragraph.bloque_de_texto.field_title
+    - paragraphs.paragraphs_type.bloque_de_texto
+  module:
+    - text
+id: paragraph.bloque_de_texto.default
+targetEntityType: paragraph
+bundle: bloque_de_texto
+mode: default
+content:
+  field_content:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,37 @@
+uuid: 6a60b84e-15b1-47d4-a6d2-4c22af798b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_items
+    - paragraphs.paragraphs_type.elemento_de_lista
+    - paragraphs.paragraphs_type.item_list
+  module:
+    - entity_reference_revisions
+id: paragraph.item_list.field_list_items
+field_name: field_list_items
+entity_type: paragraph
+bundle: item_list
+label: 'Elemento de lista'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      elemento_de_lista: elemento_de_lista
+    target_bundles_drag_drop:
+      bloque_de_texto:
+        weight: 4
+        enabled: false
+      elemento_de_lista:
+        enabled: true
+        weight: 5
+      item_list:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

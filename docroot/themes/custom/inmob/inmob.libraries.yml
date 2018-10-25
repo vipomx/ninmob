@@ -1,0 +1,11 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/styles.css: {}
+  js:
+    js/inmob.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/modernizr

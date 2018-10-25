@@ -1,0 +1,21 @@
+uuid: 7c25a1ca-5f19-4455-9119-7a7add55a32a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.bloque_de_texto
+  module:
+    - text
+id: paragraph.bloque_de_texto.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: bloque_de_texto
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

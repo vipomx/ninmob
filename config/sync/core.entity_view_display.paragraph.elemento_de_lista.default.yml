@@ -1,0 +1,48 @@
+uuid: d133af35-abf8-4c37-9c8e-e55dd087b10d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.elemento_de_lista.field_image
+    - field.field.paragraph.elemento_de_lista.field_link
+    - field.field.paragraph.elemento_de_lista.field_title
+    - image.style.large
+    - paragraphs.paragraphs_type.elemento_de_lista
+  module:
+    - image
+    - link
+id: paragraph.elemento_de_lista.default
+targetEntityType: paragraph
+bundle: elemento_de_lista
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

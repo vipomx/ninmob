@@ -1,0 +1,51 @@
+uuid: 0fb17774-4dd7-4480-a1f5-858c45e46bfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloque_de_texto.field_content
+    - field.field.paragraph.bloque_de_texto.field_title
+    - paragraphs.paragraphs_type.bloque_de_texto
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_bl:
+      children:
+        - field_title
+        - field_content
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: 'Bloque de texto'
+id: paragraph.bloque_de_texto.default
+targetEntityType: paragraph
+bundle: bloque_de_texto
+mode: default
+content:
+  field_content:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

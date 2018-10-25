@@ -1,0 +1,16 @@
+uuid: b7dae6b7-3abd-412d-9ab6-1f2a1eab882f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:f68227bd-2602-4f7b-9ab7-7b9b34e0e626'
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: bloque_de_texto
+label: 'Bloque de texto'
+icon_uuid: f68227bd-2602-4f7b-9ab7-7b9b34e0e626
+description: 'Crea bloques de texto y titulo'
+behavior_plugins: {  }
